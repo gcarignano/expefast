@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<phpunit xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:noNamespaceSchemaLocation="vendor/phpunit/phpunit/phpunit.xsd"
+  backupGlobals="false"
+  backupStaticAttributes="false"
+  colors="true"
+  convertErrorsToExceptions="true"
+  convertNoticesToExceptions="true"
+  convertWarningsToExceptions="true"
+  beStrictAboutTestsThatDoNotTestAnything="false"
+  processIsolation="false"
+  stopOnFailure="false"
+  bootstrap="tests/bootstrap.php">
+  <testsuites>
+    <testsuite name="Gateway Test Suite">
+      <directory>./tests/paymentlib/</directory>
+    </testsuite>
+  </testsuites>
+  <filter>
+    <whitelist>
+      <directory>./src</directory>
+    </whitelist>
+  </filter>
+</phpunit>
